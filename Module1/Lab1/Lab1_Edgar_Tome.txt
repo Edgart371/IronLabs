@@ -1,0 +1,667 @@
+Last login: Mon May  9 10:43:24 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) Edgars-MacBook-Air:~ edgartome83$ cd edgartome_1
+-bash: cd: edgartome_1: No such file or directory
+(base) Edgars-MacBook-Air:~ edgartome83$ ls
+Applications
+Calibre Library
+Desktop
+Documents
+Downloads
+Dropbox
+Google Drive
+Google Drive (condominios.futurebuilding@gmail.com)
+IronHack
+Library
+Movies
+Music
+Pictures
+Public
+Sites
+System
+Untitled.ipynb
+condominios.futurebuilding@gmail.com - Google Drive
+edgartome@gmail.com - Google Drive
+git_test
+iCloud Drive (arquivo)
+index.html
+opt
+print.ipynb
+style.css
+(base) Edgars-MacBook-Air:~ edgartome83$ git config -global user.name "Edgar371"
+error: did you mean `--global` (with two dashes)?
+(base) Edgars-MacBook-Air:~ edgartome83$ git config --global user.name "Edgar371"
+(base) Edgars-MacBook-Air:~ edgartome83$ git config --global user.email "edgartome@gmail.com"
+(base) Edgars-MacBook-Air:~ edgartome83$ git init
+Reinitialized existing Git repository in /Users/edgartome_1/.git/
+(base) Edgars-MacBook-Air:~ edgartome83$ mkdir IronHack
+mkdir: IronHack: File exists
+(base) Edgars-MacBook-Air:~ edgartome83$ cd IronHack
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git clone https://github.com/ta-data-par/DAFT_905
+Cloning into 'DAFT_905'...
+remote: Enumerating objects: 3010, done.
+remote: Counting objects: 100% (71/71), done.
+remote: Compressing objects: 100% (46/46), done.
+remote: Total 3010 (delta 18), reused 70 (delta 18), pack-reused 2939
+Receiving objects: 100% (3010/3010), 120.84 MiB | 24.00 MiB/s, done.
+Resolving deltas: 100% (1502/1502), done.
+(base) Edgars-MacBook-Air:IronHack edgartome83$ ls
+DA		DAFT_905
+(base) Edgars-MacBook-Air:IronHack edgartome83$ pwd
+/Users/edgartome_1/IronHack
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git ini
+git: 'ini' is not a git command. See 'git --help'.
+
+The most similar commands are
+	init
+	init-db
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git init
+Initialized empty Git repository in /Users/edgartome_1/IronHack/.git/
+(base) Edgars-MacBook-Air:IronHack edgartome83$ cd IronHack
+-bash: cd: IronHack: No such file or directory
+(base) Edgars-MacBook-Air:IronHack edgartome83$ ls
+DA		DAFT_905
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git add .
+warning: adding embedded git repository: DAFT_905
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> DAFT_905
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached DAFT_905
+hint: 
+hint: See "git help submodule" for more information.
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git init
+Reinitialized existing Git repository in /Users/edgartome_1/IronHack/.git/
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git add .
+(base) Edgars-MacBook-Air:IronHack edgartome83$ cd cv
+(base) Edgars-MacBook-Air:cv edgartome83$ pwd
+/Users/edgartome_1/IronHack/cv
+(base) Edgars-MacBook-Air:cv edgartome83$ git init
+Initialized empty Git repository in /Users/edgartome_1/IronHack/CV/.git/
+(base) Edgars-MacBook-Air:cv edgartome83$ git add .
+(base) Edgars-MacBook-Air:cv edgartome83$ git commit -m "CV"
+[main (root-commit) 6d9fa2c] CV
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Edgar Tome - Completed CV .pdf
+(base) Edgars-MacBook-Air:cv edgartome83$ git remote add origin git@github.com:Edgart371/IronDocks.git
+(base) Edgars-MacBook-Air:cv edgartome83$ git push -u origin main
+Enter passphrase for key '/Users/edgartome_1/.ssh/id_rsa': 
+Enter passphrase for key '/Users/edgartome_1/.ssh/id_rsa': 
+Enter passphrase for key '/Users/edgartome_1/.ssh/id_rsa': 
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) Edgars-MacBook-Air:cv edgartome83$ git push -u origin main
+Enter passphrase for key '/Users/edgartome_1/.ssh/id_rsa': 
+Enter passphrase for key '/Users/edgartome_1/.ssh/id_rsa': 
+Enter passphrase for key '/Users/edgartome_1/.ssh/id_rsa': 
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) Edgars-MacBook-Air:cv edgartome83$ git push -u origin main
+Enter passphrase for key '/Users/edgartome_1/.ssh/id_rsa': 
+Enter passphrase for key '/Users/edgartome_1/.ssh/id_rsa': 
+Enter passphrase for key '/Users/edgartome_1/.ssh/id_rsa': 
+Received disconnect from 140.82.121.4 port 22:11: Bye Bye
+Disconnected from 140.82.121.4 port 22
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) Edgars-MacBook-Air:cv edgartome83$ pwd
+/Users/edgartome_1/IronHack/cv
+(base) Edgars-MacBook-Air:cv edgartome83$ git init
+Reinitialized existing Git repository in /Users/edgartome_1/IronHack/CV/.git/
+(base) Edgars-MacBook-Air:cv edgartome83$ git push -u origin main
+Enter passphrase for key '/Users/edgartome_1/.ssh/id_rsa': 
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) Edgars-MacBook-Air:cv edgartome83$ ~/.ssh/config
+-bash: /Users/edgartome_1/.ssh/config: No such file or directory
+(base) Edgars-MacBook-Air:cv edgartome83$ cd ..
+(base) Edgars-MacBook-Air:IronHack edgartome83$ cd ..
+(base) Edgars-MacBook-Air:~ edgartome83$ ~/.ssh/config
+-bash: /Users/edgartome_1/.ssh/config: No such file or directory
+(base) Edgars-MacBook-Air:~ edgartome83$ ls -al ~/.ssh
+total 24
+drwx------   5 edgartome83  staff   160 Aug  2  2021 .
+drwxr-xr-x+ 66 edgartome83  staff  2112 May  9 11:52 ..
+-rw-------   1 edgartome83  staff  2655 Aug  2  2021 id_rsa
+-rw-r--r--   1 edgartome83  staff   573 Aug  2  2021 id_rsa.pub
+-rw-r--r--   1 edgartome83  staff   405 Aug  2  2021 known_hosts
+(base) Edgars-MacBook-Air:~ edgartome83$ git config --global user.name "Edgar371"
+(base) Edgars-MacBook-Air:~ edgartome83$ git config --global user.email "edgartome@gmail.com"
+(base) Edgars-MacBook-Air:~ edgartome83$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+(base) Edgars-MacBook-Air:~ edgartome83$ cd IronHack
+(base) Edgars-MacBook-Air:IronHack edgartome83$ cd CV
+(base) Edgars-MacBook-Air:CV edgartome83$ git init .
+Reinitialized existing Git repository in /Users/edgartome_1/IronHack/CV/.git/
+(base) Edgars-MacBook-Air:CV edgartome83$ git add .
+(base) Edgars-MacBook-Air:CV edgartome83$ git status
+On branch main
+nothing to commit, working tree clean
+(base) Edgars-MacBook-Air:CV edgartome83$ git commit -m "CV"
+On branch main
+nothing to commit, working tree clean
+(base) Edgars-MacBook-Air:CV edgartome83$ git remote add origin git@github.com:Edgart371/IronDocks.git
+error: remote origin already exists.
+(base) Edgars-MacBook-Air:CV edgartome83$ git push -u origin main
+Enter passphrase for key '/Users/edgartome_1/.ssh/id_rsa': 
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) Edgars-MacBook-Air:CV edgartome83$ ssh-add ~/.ssh/id_rsa 
+Enter passphrase for /Users/edgartome_1/.ssh/id_rsa: 
+(base) Edgars-MacBook-Air:CV edgartome83$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/edgartome_1/.ssh/id_rsa): 
+/Users/edgartome_1/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/edgartome_1/.ssh/id_rsa
+Your public key has been saved in /Users/edgartome_1/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:3zgDEseSIT7W1bMDeMbuWAQ3+g//dbsgHTCEd/qxnRQ edgartome83@Edgars-MacBook-Air.local
+The key's randomart image is:
++---[RSA 3072]----+
+|    . o++...     |
+|   . o.B*o+. . E |
+|    + *=o..=o   .|
+|   . . =o o.o. . |
+|      .+S  ...= .|
+|      ...* o.o.o |
+|          B..o. .|
+|           +.....|
+|            .  o.|
++----[SHA256]-----+
+(base) Edgars-MacBook-Air:CV edgartome83$ ls -al ~/.ssh
+total 24
+drwx------   5 edgartome83  staff   160 Aug  2  2021 .
+drwxr-xr-x+ 67 edgartome83  staff  2144 May  9 13:16 ..
+-rw-------   1 edgartome83  staff  2675 May  9 13:13 id_rsa
+-rw-r--r--   1 edgartome83  staff   590 May  9 13:13 id_rsa.pub
+(base) Edgars-MacBook-Air:CV edgartome83$ ssh-keygen -t ed25519 -C "edgartome@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/Users/edgartome_1/.ssh/id_ed25519): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/edgartome_1/.ssh/id_ed25519
+Your public key has been saved in /Users/edgartome_1/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:fpK6ZKCE07Ue6Muwds6+PwwGdyqnqRYB5tfRtFdQ2OI edgartome@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|      o. .=o     |
+|..   . ..o..     |
+|+   o .....      |
+| * = +  .E       |
+|o O *   S        |
+| * B o . .       |
+|. X + o + .      |
+| O.o = . o       |
+|* *=o.+.         |
++----[SHA256]-----+
+(base) Edgars-MacBook-Air:CV edgartome83$ eval "$(ssh-agent -s)"
+Agent pid 8461
+(base) Edgars-MacBook-Air:CV edgartome83$ open ~/.ssh/config
+The file /Users/edgartome_1/.ssh/config does not exist.
+(base) Edgars-MacBook-Air:CV edgartome83$ touch ~/.ssh/config
+(base) Edgars-MacBook-Air:CV edgartome83$ ssh-add -K ~/.ssh/id_ed25519
+WARNING: The -K and -A flags are deprecated and have been replaced
+         by the --apple-use-keychain and --apple-load-keychain
+         flags, respectively.  To suppress this warning, set the
+         environment variable APPLE_SSH_ADD_BEHAVIOR as described in
+         the ssh-add(1) manual page.
+Enter passphrase for /Users/edgartome_1/.ssh/id_ed25519: 
+Identity added: /Users/edgartome_1/.ssh/id_ed25519 (edgartome@gmail.com)
+(base) Edgars-MacBook-Air:CV edgartome83$ pbcopy < ~/.ssh/id_ed25519.pub
+(base) Edgars-MacBook-Air:CV edgartome83$ ls -al ~/.ssh
+total 48
+drwx------   8 edgartome83  staff   256 May  9 13:28 .
+drwxr-xr-x+ 67 edgartome83  staff  2144 May  9 13:16 ..
+-rw-r--r--@  1 edgartome83  staff    78 May  9 13:27 config
+-rw-------@  1 edgartome83  staff   464 May  9 13:21 id_ed25519
+-rw-r--r--   1 edgartome83  staff   101 May  9 13:21 id_ed25519.pub
+-rw-------@  1 edgartome83  staff   121 May  9 13:28 id_rsa
+-rw-r--r--   1 edgartome83  staff   590 May  9 13:13 id_rsa.pub
+-rw-r--r--   1 edgartome83  staff   405 Aug  2  2021 known_hosts
+(base) Edgars-MacBook-Air:CV edgartome83$ ls -al ~/.ssh
+total 24
+drwx------   4 edgartome83  staff   128 May  9 13:36 .
+drwxr-xr-x+ 67 edgartome83  staff  2144 May  9 13:16 ..
+-rw-r--r--@  1 edgartome83  staff  6148 May  9 13:36 .DS_Store
+-rw-r--r--@  1 edgartome83  staff    78 May  9 13:27 config
+(base) Edgars-MacBook-Air:CV edgartome83$ ssh-keygen -t ed25519 -C "edgartome@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/Users/edgartome_1/.ssh/id_ed25519): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/edgartome_1/.ssh/id_ed25519
+Your public key has been saved in /Users/edgartome_1/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:vWxWQvH93350l7ATpBqb3i+1T3uEOzLkiL8T8dikxVU edgartome@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|          .    .E|
+|           o o.  |
+|          ..+..  |
+|         +..+o . |
+|        S BO. +.o|
+|         =++++..B|
+|        ..*=. o==|
+|        .+oo+.+.+|
+|         .ooo+.++|
++----[SHA256]-----+
+(base) Edgars-MacBook-Air:CV edgartome83$ eval "$(ssh-agent -s)"
+Agent pid 9157
+(base) Edgars-MacBook-Air:CV edgartome83$ open ~/.ssh/config
+(base) Edgars-MacBook-Air:CV edgartome83$ ssh-add -K ~/.ssh/id_ed25519
+WARNING: The -K and -A flags are deprecated and have been replaced
+         by the --apple-use-keychain and --apple-load-keychain
+         flags, respectively.  To suppress this warning, set the
+         environment variable APPLE_SSH_ADD_BEHAVIOR as described in
+         the ssh-add(1) manual page.
+Identity added: /Users/edgartome_1/.ssh/id_ed25519 (edgartome@gmail.com)
+(base) Edgars-MacBook-Air:CV edgartome83$ pbcopy < ~/.ssh/id_ed25519.pub
+(base) Edgars-MacBook-Air:CV edgartome83$ ssh -T git@github.com
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi Edgart371! You've successfully authenticated, but GitHub does not provide shell access.
+(base) Edgars-MacBook-Air:CV edgartome83$ git init
+Reinitialized existing Git repository in /Users/edgartome_1/IronHack/CV/.git/
+(base) Edgars-MacBook-Air:CV edgartome83$ git add .
+(base) Edgars-MacBook-Air:CV edgartome83$ git status
+On branch main
+nothing to commit, working tree clean
+(base) Edgars-MacBook-Air:CV edgartome83$ git commit -m "CV"
+On branch main
+nothing to commit, working tree clean
+(base) Edgars-MacBook-Air:CV edgartome83$ git commit -m "CV"
+On branch main
+nothing to commit, working tree clean
+(base) Edgars-MacBook-Air:CV edgartome83$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 144.93 KiB | 2.42 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Edgart371/IronDocks.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(base) Edgars-MacBook-Air:CV edgartome83$ cd ..
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git init
+Reinitialized existing Git repository in /Users/edgartome_1/IronHack/.git/
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git clone git@github.com:Edgart371/IronEdgar.git
+Cloning into 'IronEdgar'...
+warning: You appear to have cloned an empty repository.
+(base) Edgars-MacBook-Air:IronHack edgartome83$ touch about.txt
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git add about.txt
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git commit -m "lab0"
+[main (root-commit) 6f6f9ab] lab0
+ 5 files changed, 2 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 CV/Edgar Tome - Completed CV .pdf
+ create mode 100644 DA/sample.txt
+ create mode 160000 DAFT_905
+ create mode 100644 about.txt
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git remote add origin git@github.com:Edgart371/IronEdgar.git
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git push -u origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (8/8), 145.41 KiB | 2.27 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Edgart371/IronEdgar.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	IronEdgar/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) Edgars-MacBook-Air:IronHack edgartome83$ pwd
+/Users/edgartome_1/IronHack
+(base) Edgars-MacBook-Air:IronHack edgartome83$ cd IronEdgar
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ pwd
+/Users/edgartome_1/IronHack/IronEdgar
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git clone git@github.com:Edgart371/IronEdgar.git
+Cloning into 'IronEdgar'...
+warning: You appear to have cloned an empty repository.
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ touch about.txt
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ ls
+IronEdgar	about.txt
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ ls
+about.txt
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ pwd
+/Users/edgartome_1/IronHack/IronEdgar
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git add about.txt
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git commit -m "text"
+[main (root-commit) d12a14a] text
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 about.txt
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git remote add origin git@github.com:Edgart371/IronEdgar.git
+error: remote origin already exists.
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ push -u origin main
+-bash: push: command not found
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git init
+Reinitialized existing Git repository in /Users/edgartome_1/IronHack/IronEdgar/.git/
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ push -u origin main
+-bash: push: command not found
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ pwd
+/Users/edgartome_1/IronHack/IronEdgar
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git init
+Reinitialized existing Git repository in /Users/edgartome_1/IronHack/IronEdgar/.git/
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git add .
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git commit -m "text"
+[main 77f3104] text
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .DS_Store
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git remote add origin git@github.com:Edgart371/IronEdgar.git
+error: remote origin already exists.
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ push -u origin main
+-bash: push: command not found
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ push -u origin main
+-bash: push: command not found
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ push -u origin main
+-bash: push: command not found
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ push -u origin main
+-bash: push: command not found
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git branch
+* main
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git push -u 
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 695 bytes | 695.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Edgart371/IronEdgar.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ cd ..
+(base) Edgars-MacBook-Air:IronHack edgartome83$ pwd
+/Users/edgartome_1/IronHack
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git clone https://github.com/Edgart371/IronMathieu
+Cloning into 'IronMathieu'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+(base) Edgars-MacBook-Air:IronHack edgartome83$ git branch
+* main
+(base) Edgars-MacBook-Air:IronHack edgartome83$ pwd
+/Users/edgartome_1/IronHack
+(base) Edgars-MacBook-Air:IronHack edgartome83$ cd IronMathieu
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ pwd
+/Users/edgartome_1/IronHack/IronMathieu
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git branch
+* main
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git branch classmate
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git checkout classmate
+Switched to branch 'classmate'
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ touch edgar.txt
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git add edgar.txt
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git commit -m "text"
+[classmate 498386a] text
+ 1 file changed, 1 insertion(+)
+ create mode 100644 edgar.txt
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ push -u origin
+-bash: push: command not found
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ push -u origin classmate
+-bash: push: command not found
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git branch
+* classmate
+  main
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push -u origine classmate
+fatal: 'origine' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push -u origin classmate
+Username for 'https://github.com': Edgart371
+Password for 'https://Edgart371@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Edgart371/IronMathieu/'
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push -u origin classmate
+Username for 'https://github.com': Edgart371
+Password for 'https://Edgart371@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Edgart371/IronMathieu/'
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ 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
+-bash: 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: command not found
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push https:// 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@github.com/Edgart371/IronEdgar.git
+error: src refspec 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@github.com/Edgart371/IronEdgar.git does not match any
+error: failed to push some refs to 'https://'
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push https:// 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@github.com/Edg
+error: src refspec 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@github.com/Edg does not match any
+error: failed to push some refs to 'https://'
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push https://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@github.com/Edgart371/IronEdgar.git
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 757 bytes | 757.00 KiB/s, done.
+Total 9 (delta 0), reused 6 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'classmate' on GitHub by visiting:
+remote:      https://github.com/Edgart371/IronEdgar/pull/new/classmate
+remote: 
+To https://github.com/Edgart371/IronEdgar.git
+ * [new branch]      classmate -> classmate
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push https://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@github.com/Edgart371/IronMathieu.git
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 345 bytes | 345.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'classmate' on GitHub by visiting:
+remote:      https://github.com/Edgart371/IronMathieu/pull/new/classmate
+remote: 
+To https://github.com/Edgart371/IronMathieu.git
+ * [new branch]      classmate -> classmate
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push -u origin classmate
+Username for 'https://github.com': Edgart371
+Password for 'https://Edgart371@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Edgart371/IronMathieu/'
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push -u origin classmate
+Username for 'https://github.com': Edgart371
+Password for 'https://Edgart371@github.com': 
+Branch 'classmate' set up to track remote branch 'classmate' from 'origin'.
+Everything up-to-date
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git pull https://github.com/Edgart371/IronMathieu.git
+From https://github.com/Edgart371/IronMathieu
+ * branch            HEAD       -> FETCH_HEAD
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Already up to date.
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git branch
+* classmate
+  main
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ pwd
+/Users/edgartome_1/IronHack/IronMathieu
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ cd ..
+(base) Edgars-MacBook-Air:IronHack edgartome83$ pwd
+/Users/edgartome_1/IronHack
+(base) Edgars-MacBook-Air:IronHack edgartome83$ cd IronEdgar
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ pwd
+/Users/edgartome_1/IronHack/IronEdgar
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git push
+To github.com:Edgart371/IronEdgar.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:Edgart371/IronEdgar.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git pull https://github.com/Edgart371/IronMathieu.git
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 424 bytes | 141.00 KiB/s, done.
+From https://github.com/Edgart371/IronMathieu
+ * branch            HEAD       -> FETCH_HEAD
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: refusing to merge unrelated histories
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git pull https://github.com/Edgart371/Ironthieu.git
+remote: Repository not found.
+fatal: repository 'https://github.com/Edgart371/Ironthieu.git/' not found
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git config pull.rebase false
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git pull https://github.com/Edgart371/Ironthieu.git
+remote: Repository not found.
+fatal: repository 'https://github.com/Edgart371/Ironthieu.git/' not found
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git pull https://github.com/Edgart371/IronMathieu.git
+From https://github.com/Edgart371/IronMathieu
+ * branch            HEAD       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git checkout classmates
+error: pathspec 'classmates' did not match any file(s) known to git
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git branches
+git: 'branches' is not a git command. See 'git --help'.
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git branch
+* main
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git add remote origin
+fatal: pathspec 'remote' did not match any files
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git fetch
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (9/9), done.
+Unpacking objects: 100% (13/13), 1.67 KiB | 341.00 KiB/s, done.
+remote: Total 13 (delta 0), reused 12 (delta 0), pack-reused 0
+From github.com:Edgart371/IronEdgar
+   77f3104..f4dadd6  main       -> origin/main
+ * [new branch]      classmate  -> origin/classmate
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git status
+On branch main
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git pull 
+Updating 77f3104..f4dadd6
+Fast-forward
+ mathieu.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 mathieu.txt
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git push -u origin main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+Everything up-to-date
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ 
