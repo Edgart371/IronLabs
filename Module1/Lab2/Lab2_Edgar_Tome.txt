@@ -1,0 +1,292 @@
+Last login: Tue May 10 11:11:45 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) Edgars-MacBook-Air:~ edgartome83$ cd IronHack/IronEdgar
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ pwd
+/Users/edgartome_1/IronHack/IronEdgar
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ ls
+about.txt	mathieu.txt
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git init
+Reinitialized existing Git repository in /Users/edgartome_1/IronHack/IronEdgar/.git/
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ echo "This is some content to work wit"> mathieu.txt
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git add mathieu.txt
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git commit -am "this is the second content"
+[main 44bd34e] this is the second content
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git checkout classmate
+Branch 'classmate' set up to track remote branch 'classmate' from 'origin'.
+Switched to a new branch 'classmate'
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git branch
+* classmate
+  main
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ echo "This is some diferente contect"> mathieu.txt
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git commit -am "edited the content of mathieu.txt to cause a conflict"
+On branch classmate
+Your branch is up to date with 'origin/classmate'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	mathieu.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git checkout -b classmate2
+Switched to a new branch 'classmate2'
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git branch
+  classmate
+* classmate2
+  main
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ echo "This is some diferente contect"> mathieu.txt
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git commit -am "edited the content of mathieu.txt to cause a conflict"
+On branch classmate2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	mathieu.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git add mathieu.txt
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git commit -am "edited the content of mathieu.txt to cause a conflict"
+[classmate2 0f84157] edited the content of mathieu.txt to cause a conflict
+ 1 file changed, 1 insertion(+)
+ create mode 100644 mathieu.txt
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git branch
+  classmate
+* classmate2
+  main
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ git pull origin main
+From github.com:Edgart371/IronEdgar
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+(base) Edgars-MacBook-Air:IronEdgar edgartome83$ cd ..
+(base) Edgars-MacBook-Air:IronHack edgartome83$ ls
+CV			Documents		Project1		git-merge-testing
+DA			IronEdgar		Project2
+DAFT_905		IronMathieu		Project3
+Day2			Labs			about.txt
+(base) Edgars-MacBook-Air:IronHack edgartome83$ cd IronMathieu
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ ls
+about.txt	edgar.txt
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git init
+Reinitialized existing Git repository in /Users/edgartome_1/IronHack/IronMathieu/.git/
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git status
+On branch classmate
+Your branch is up to date with 'origin/classmate'.
+
+nothing to commit, working tree clean
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git pull origin master
+fatal: couldn't find remote ref master
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git pull origin main
+From https://github.com/Edgart371/IronMathieu
+ * branch            main       -> FETCH_HEAD
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Already up to date.
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git satus
+git: 'satus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git status
+On branch classmate
+Your branch is up to date with 'origin/classmate'.
+
+nothing to commit, working tree clean
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git log
+commit 51a51ac6552b3b1811da3c62cbe8fac8af575db3 (HEAD -> main, origin/main, origin/HEAD)
+Author: Mathieu <jomain.mathieu0@gmail.com>
+Date:   Mon May 9 14:45:03 2022 +0200
+
+    about.txt
+
+commit 6d5bde97b2f2c07ad204669839356ccbd2e597f0
+Author: Mathieu <jomain.mathieu0@gmail.com>
+Date:   Mon May 9 14:40:00 2022 +0200
+
+    about.txt
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git reset --hard 6d5bde97b2f2c07ad204669839356ccbd2e597f0
+HEAD is now at 6d5bde9 about.txt
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git branch lab-resolving-git-conflicts
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git checkout -b lab-resolving-git-conflicts
+fatal: A branch named 'lab-resolving-git-conflicts' already exists.
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git status
+On branch main
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git branch
+  classmate
+  lab-resolving-git-conflicts
+* main
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git checkout lab-resolving-git-conflicts
+Switched to branch 'lab-resolving-git-conflicts'
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git add about.txt
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git commit -m "new text"
+[lab-resolving-git-conflicts 085e502] new text
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git pull origin main
+From https://github.com/Edgart371/IronMathieu
+ * branch            main       -> FETCH_HEAD
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Auto-merging about.txt
+CONFLICT (content): Merge conflict in about.txt
+Automatic merge failed; fix conflicts and then commit the result.
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git status
+On branch lab-resolving-git-conflicts
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	both modified:   about.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git status
+On branch lab-resolving-git-conflicts
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	both modified:   about.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git add about.txt
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git commit -m "final"
+[lab-resolving-git-conflicts 1077e83] final
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git pull origin main
+From https://github.com/Edgart371/IronMathieu
+ * branch            main       -> FETCH_HEAD
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Already up to date.
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push origin main
+To https://github.com/Edgart371/IronMathieu
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Edgart371/IronMathieu'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. Check out this branch and integrate the remote changes
+hint: (e.g. 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git config pull.rebase false
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git pull origin main
+From https://github.com/Edgart371/IronMathieu
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push main origin
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push -u origin main
+To https://github.com/Edgart371/IronMathieu
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Edgart371/IronMathieu'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. Check out this branch and integrate the remote changes
+hint: (e.g. 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git fetch
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push -u origin main
+To https://github.com/Edgart371/IronMathieu
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Edgart371/IronMathieu'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. Check out this branch and integrate the remote changes
+hint: (e.g. 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git pull origin main
+From https://github.com/Edgart371/IronMathieu
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ cat about.txt
+
+I am Edgar
+
+I am a student
+
+No experience on data
+
+I am here to learn
+
+hello
+
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git add about.txt
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git commit -m "f"
+On branch lab-resolving-git-conflicts
+nothing to commit, working tree clean
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push
+fatal: The current branch lab-resolving-git-conflicts has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin lab-resolving-git-conflicts
+
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ git push -u origin lab-resolving-git-conflicts
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 598 bytes | 598.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'lab-resolving-git-conflicts' on GitHub by visiting:
+remote:      https://github.com/Edgart371/IronMathieu/pull/new/lab-resolving-git-conflicts
+remote: 
+To https://github.com/Edgart371/IronMathieu
+ * [new branch]      lab-resolving-git-conflicts -> lab-resolving-git-conflicts
+Branch 'lab-resolving-git-conflicts' set up to track remote branch 'lab-resolving-git-conflicts' from 'origin'.
+(base) Edgars-MacBook-Air:IronMathieu edgartome83$ 
