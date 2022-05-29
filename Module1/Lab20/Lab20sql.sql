@@ -73,3 +73,22 @@ VALUES ('852399038', '22-08-2018', '0', '1', '3'),
 ('731166526', '31-12-2018', '3', '0', '5'),
 ('271135104', '22-01-2019', '2', '2', '7');
  select * from Invoices;
+ 
+UPDATE Salespersons
+SET Store = "Miami"
+WHERE Store = "Mimia";
+select * from Salespersons;
+
+UPDATE Customers
+SET Email = "ppicasso@gmail.com"
+WHERE Customer_ID = "10001";
+UPDATE Customers
+SET Email = "lincoln@us.gov"
+WHERE Customer_ID = "20001";
+UPDATE Customers
+SET Email = "hello@napoleon.me"
+WHERE Customer_ID = "30001";
+select * from Customers;
+
+DELETE FROM Cars WHERE ID = '5';
+select * from Cars;
