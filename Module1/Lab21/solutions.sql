@@ -1,3 +1,5 @@
+#Lab 21
+
 use publications;
 select * from authors;
 select * from publishers;
