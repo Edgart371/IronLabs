@@ -31,9 +31,9 @@ order by sum(declared_monthly_revenue)
 desc limit 3;
 #7.
 select count(distinct(review_score)) from order_reviews;
-#8.Não funciona
+#8.Não funciona. Now it works removing select all on the count(review_score)
 create table new_column2 as
-SELECT *, count(review_score),
+SELECT count(review_score),
 CASE WHEN review_score = '1' THEN 'Terrible'
 WHEN review_score = '2' THEN 'Bad'
 WHEN review_score = '3' THEN 'Acceptable'
@@ -43,6 +43,7 @@ END AS Description_review
 FROM olist.order_reviews
 GROUP BY review_score
 ORDER BY count(review_score) DESC;
+select * from new_column2;
 #9.
 select review_score, count(review_id) from order_reviews
 group by review_score

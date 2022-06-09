@@ -1,0 +1,14 @@
+# ignore ALL .log files
+*.log
+
+# ignore ALL files in ANY directory named temp
+temp/
+
+# Ignore Mac system files
+*.DS_store
+
+# Ignore all text files
+*.txt
+
+#Ignore all bkp files
+*.bkp
