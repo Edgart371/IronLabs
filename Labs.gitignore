@@ -12,3 +12,8 @@ temp/
 
 #Ignore all bkp files
 *.bkp
+
+#Ignore large files
+employees.sql
+
+Sentiment140.csv
