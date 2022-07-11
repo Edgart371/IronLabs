@@ -26,5 +26,4 @@ Week 7. Machine learning. Supervised learning. Features selection. Hyperparamete
 
 Week 8. Unsupervised learning AutoML. Deep learning. NLP
 
-Week 9. Project
 
